@@ -40,7 +40,7 @@ const HeroSection = () => {
       </div>
       {/* Subtle background elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
-        <img src="/images/leaf-pattern.png" alt="Leaf pattern" className="w-full h-full object-cover" />
+        <img src="/images/group-104.png" alt="Leaf pattern" className="w-full h-full object-cover" />
       </div>
     </section>
   );
