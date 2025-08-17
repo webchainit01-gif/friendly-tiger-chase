@@ -1,27 +1,74 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import { Quote } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from '@/components/ui/card';
 
-interface TestimonialCardProps {
+interface Testimonial {
   quote: string;
   author: string;
+  location: string;
+  avatar: string;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, author }) => {
+const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
-    <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center">
+    <Card className="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center h-full">
       <Quote size={48} className="text-green-600 mb-4 opacity-70" />
-      <p className="text-lg text-gray-700 italic mb-4">"{quote}"</p>
-      <p className="font-semibold text-green-800">- {author}</p>
-    </div>
+      <p className="text-lg text-gray-700 italic mb-6 leading-relaxed">"{testimonial.quote}"</p>
+      <div className="flex items-center mt-auto">
+        <img
+          src={testimonial.avatar}
+          alt={testimonial.author}
+          className="w-12 h-12 rounded-full object-cover mr-4"
+        />
+        <div>
+          <p className="font-semibold text-green-800">{testimonial.author}</p>
+          <p className="text-sm text-gray-500">{testimonial.location}</p>
+        </div>
+      </div>
+    </Card>
   );
 };
 
 const TestimonialsSection = () => {
-  const testimonials = [
-    { quote: "This oil has really helped my joints feel relaxed.", author: "Asha (Delhi)" },
-    { quote: "Authentic Ayurvedic products I can trust.", author: "Ramesh (Mumbai)" },
-    { quote: "I've noticed a significant improvement in my energy levels.", author: "Priya (Bengaluru)" },
+  const testimonials: Testimonial[] = [
+    {
+      quote: "I've struggled with joint discomfort for years, and Mount Abu Bala Malkangani Oil has been a true blessing. The relief is noticeable, and I can move much more freely now. It's become an essential part of my daily routine.",
+      author: "Asha Sharma",
+      location: "Delhi",
+      avatar: "/images/avatar-1.jpeg",
+    },
+    {
+      quote: "As someone who values authentic Ayurvedic practices, I can confidently say that Ayurveda of India's products are of the highest quality. I've tried their Maha Vajrasheela and feel a significant boost in my overall vitality and energy. Truly trustworthy!",
+      author: "Ramesh Kumar",
+      location: "Mumbai",
+      avatar: "/images/avatar-2.jpeg",
+    },
+    {
+      quote: "The Dayana Pain Oil is incredibly effective. It absorbs quickly and provides soothing relief to my tired muscles after a long day. I appreciate the natural ingredients and the traditional approach. Highly recommend it for anyone seeking natural comfort.",
+      author: "Priya Singh",
+      location: "Bengaluru",
+      avatar: "/images/avatar-3.jpeg",
+    },
+    {
+      quote: "I was looking for a natural way to support my liver health, and Liver Guard A1 has exceeded my expectations. I feel more energetic, and my digestion has improved. It's reassuring to know I'm using a product rooted in ancient wisdom.",
+      author: "Anil Gupta",
+      location: "Chennai",
+      avatar: "/images/avatar-1.jpeg",
+    },
+    {
+      quote: "Maha Vajrasheela (Family) has become a staple in our home. It's a gentle yet effective way to boost immunity for everyone. My family feels more resilient, especially during seasonal changes. Thank you for such a wonderful product!",
+      author: "Deepa Reddy",
+      location: "Hyderabad",
+      avatar: "/images/avatar-2.jpeg",
+    },
   ];
 
   return (
@@ -29,13 +76,27 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           title="What Our Customers Say"
-          subtitle="Hear from those who have experienced the benefits of Ayurveda of India."
+          subtitle="Hear from those who have experienced the profound benefits of Ayurveda of India's authentic products."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} quote={testimonial.quote} author={testimonial.author} />
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-4xl mx-auto"
+        >
+          <CarouselContent className="-ml-4">
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <div className="p-1">
+                  <TestimonialCard testimonial={testimonial} />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   );
