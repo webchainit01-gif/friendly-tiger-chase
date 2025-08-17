@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import MobileNav from './MobileNav'; // Import the new MobileNav component
 
 const Header = () => {
   const navLinks = [
@@ -17,7 +18,7 @@ const Header = () => {
         <Link to="/" className="flex items-center space-x-2">
           <img src="/images/ayurveda-of-india-logo.jpeg" alt="Ayurveda of India Logo" className="h-12 w-auto" />
         </Link>
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6"> {/* Desktop navigation */}
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -28,7 +29,9 @@ const Header = () => {
             </Link>
           ))}
         </nav>
-        {/* Mobile menu icon can be added here later if needed */}
+        <div className="md:hidden"> {/* Mobile menu trigger */}
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
