@@ -1,17 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
-import { MadeWithDyad } from "@/components/made-with-dyad";
+import React from 'react';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import ProductGridSection from '@/components/ProductGridSection';
+import WhyChooseUsSection from '@/components/WhyChooseUsSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
-      </div>
-      <MadeWithDyad />
+    <div className="bg-white">
+      <HeroSection />
+      <AboutSection />
+      <ProductGridSection showTitle={true} limit={6} /> {/* Display all 6 products on homepage */}
+      <WhyChooseUsSection />
+      <TestimonialsSection />
     </div>
   );
 };
