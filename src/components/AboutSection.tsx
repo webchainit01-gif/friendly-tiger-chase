@@ -14,7 +14,7 @@ const AboutSection = () => {
             Since 1995, Ayurveda of India has been committed to bringing the profound healing power of Ayurveda to every household. We meticulously craft products that blend ancient knowledge with modern scientific rigor, ensuring purity, efficacy, and trust.
           </p>
           <p>
-            Our mission is to empower individuals to embrace a natural lifestyle, fostering optimal health and vitality through the timeless, proven science of Ayurveda. We use carefully selected, potent herbs, sourced from pristine environments and processed with utmost care.
+            Our mission =to empower individuals to embrace a natural lifestyle, fostering optimal health and vitality through the timeless, proven science of Ayurveda. We use carefully selected, potent herbs, sourced from pristine environments and processed with utmost care.
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-4 mt-8">

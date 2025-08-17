@@ -20,7 +20,7 @@ const HerbCard: React.FC<HerbCardProps> = ({ herb }) => {
         />
       </div>
       <CardContent className="p-6 text-center">
-        <h3 className="text-xl font-semibold text-green-800 mb-2">{herb.name}</h3>
+        <h3 className="text-xl font-semibold text-green-800 mb-2 font-serif">{herb.name}</h3>
         <p className="text-gray-600 text-sm mb-3 line-clamp-3">{herb.description}</p>
         <div className="flex flex-wrap justify-center gap-2 mt-4">
           {herb.benefits.slice(0, 3).map((benefit, index) => (

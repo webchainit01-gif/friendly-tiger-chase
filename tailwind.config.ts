@@ -20,6 +20,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"], // Set Montserrat as the primary sans-serif font
+        serif: ["Playfair Display", "serif"], // Add Playfair Display as the serif font
       },
       colors: {
         border: "hsl(var(--border))",
