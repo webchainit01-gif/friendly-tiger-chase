@@ -19,8 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"], // A clean, modern sans-serif
-        serif: ["Playfair Display", "serif"], // An elegant serif for headings
+        sans: ["Montserrat", "sans-serif"], // Set Montserrat as the primary sans-serif font
       },
       colors: {
         border: "hsl(var(--border))",
