@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { products } from '@/data/products';
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
+import MalkanganiOilDetailContent from '@/components/MalkanganiOilDetailContent'; // Import the new component
 
 const WHATSAPP_NUMBER = "+919876543210"; // Dummy WhatsApp number
 
@@ -24,6 +25,12 @@ const ProductDetail = () => {
     );
   }
 
+  // Conditionally render the detailed content for Malkangani Oil
+  if (product.slug === "mount-abu-bala-malkangani-oil") {
+    return <MalkanganiOilDetailContent product={product} />;
+  }
+
+  // Default rendering for other products
   return (
     <div className="container mx-auto py-16 px-4 bg-white rounded-lg shadow-sm my-8">
       <div className="flex flex-col md:flex-row gap-12 items-center">
