@@ -20,7 +20,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"], // A clean, modern sans-serif
-        serif: ["Lora", "serif"], // An elegant serif for headings
+        serif: ["Playfair Display", "serif"], // An elegant serif for headings
       },
       colors: {
         border: "hsl(var(--border))",
