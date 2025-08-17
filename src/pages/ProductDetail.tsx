@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { products } from '@/data/products';
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
-import MalkanganiOilDetailContent from '@/components/MalkanganiOilDetailContent'; // Import the new component
+import MalkanganiOilDetailContent from '@/components/MalkanganiOilDetailContent';
 
 const WHATSAPP_NUMBER = "+919876543210"; // Dummy WhatsApp number
 
@@ -48,7 +48,7 @@ const ProductDetail = () => {
 
           <div className="mb-6">
             <h2 className="text-2xl font-semibold text-green-700 mb-3 font-serif">Benefits:</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-base">
+            <ul className="list-disc list-inside text-gray-700 space-y-2 text-base text-left">
               {product.benefits.map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}
@@ -57,7 +57,7 @@ const ProductDetail = () => {
 
           <div className="mb-8">
             <h2 className="text-2xl font-semibold text-green-700 mb-3 font-serif">Key Herbs Used:</h2>
-            <p className="text-gray-700 text-base">{product.keyHerbs.join(', ')}</p>
+            <p className="text-gray-700 text-base text-left">{product.keyHerbs.join(', ')}</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mb-8">

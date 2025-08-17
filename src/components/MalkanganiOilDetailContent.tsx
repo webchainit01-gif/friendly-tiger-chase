@@ -1,5 +1,5 @@
 import React from 'react';
-import { Product } from '@/data/products'; // Corrected from '=>' to 'from'
+import { Product } from '@/data/products';
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -35,20 +35,20 @@ const MalkanganiOilDetailContent: React.FC<MalkanganiOilDetailContentProps> = ({
           </p>
           <div className="mb-6">
             <h2 className="text-2xl font-semibold text-green-700 mb-3 font-serif">Key Benefits:</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-base">
-              <li>Enhances memory & concentration</li>
-              <li>Relieves stress, anxiety, and insomnia</li>
-              <li>Improves sleep quality</li>
-              <li>Nourishes hair roots, promotes thickness & strength</li>
-              <li>Strengthens the nervous system</li>
-              <li>Effective for joint, knee, and arthritis pain</li>
-              <li>Relieves backache and neck stiffness</li>
-              <li>Reduces inflammation & supports family health</li>
+            <ul className="list-disc list-inside text-gray-700 space-y-2 text-base text-left">
+              <li>✔ Enhances memory & concentration</li>
+              <li>✔ Relieves stress, anxiety, and insomnia</li>
+              <li>✔ Improves sleep quality</li>
+              <li>✔ Nourishes hair roots, promotes thickness & strength</li>
+              <li>✔ Strengthens the nervous system</li>
+              <li>✔ Effective for joint, knee, and arthritis pain</li>
+              <li>✔ Relieves backache and neck stiffness</li>
+              <li>✔ Reduces inflammation & supports family health</li>
             </ul>
           </div>
           <div className="mb-8">
             <h2 className="text-2xl font-semibold text-green-700 mb-3 font-serif">Key Herbs Used:</h2>
-            <p className="text-gray-700 text-base">{product.keyHerbs.join(', ')}</p>
+            <p className="text-gray-700 text-base text-left">{product.keyHerbs.join(', ')}</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mb-8">
@@ -66,6 +66,122 @@ const MalkanganiOilDetailContent: React.FC<MalkanganiOilDetailContentProps> = ({
             </Button>
           </a>
         </div>
+      </div>
+
+      <div className="prose max-w-4xl mx-auto text-gray-700 leading-relaxed mt-12">
+        <hr className="my-8 border-gray-300" />
+        <h2 className="text-3xl font-bold text-green-800 mb-4 font-serif">The Gift of Nature – Malkagni Oil</h2>
+        <h3 className="text-2xl font-semibold text-green-700 mt-6 mb-3 font-serif">Mental Strength, Physical Balance</h3>
+        <p className="mb-4">
+          Also known as <span className="font-bold">Jyotishmati Oil</span>, it is prepared from the seeds of <span className="font-bold">Celastrus paniculatus</span>, used in Ayurveda for thousands of years to enhance <span className="font-bold">mental focus, concentration, and memory.</span> Grown in the serene environment of the mountains, this rare herb offers unmatched medicinal properties.
+        </p>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-left">
+          <li>✔ Pure Ayurvedic medicine made from mountain herbs</li>
+          <li>✔ Blend of Ayurveda tradition & modern knowledge</li>
+          <li>✔ Strengthens brain & nervous system</li>
+          <li>✔ Naturally improves memory & focus</li>
+          <li>✔ Relieves stress, fatigue, and insomnia</li>
+          <li>✔ Provides relief in arthritis, joint & back pain</li>
+          <li>✔ Boosts immunity to protect from illnesses</li>
+          <li>✔ Safe & beneficial for the entire family</li>
+        </ul>
+        <p className="mb-8">
+          <span className="font-bold">Removes pain, strengthens mind & body.</span>
+        </p>
+
+        <hr className="my-8 border-gray-300" />
+        <h2 className="text-3xl font-bold text-green-800 mb-4 font-serif">Key Benefits</h2>
+        <p className="mb-4">
+          The rare heritage of Ayurveda – A protector for the entire family.
+        </p>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-left">
+          <li>✔ Improves memory & focus, helpful for studies and career</li>
+          <li>✔ Enhances concentration & mental strength</li>
+          <li>✔ Provides natural relief from stress, anxiety & insomnia</li>
+          <li>✔ Strengthens hair, prevents hair fall, and restores shine</li>
+          <li>✔ Relieves joint, knee, arthritis, back, and neck pain</li>
+          <li>✔ Natural antioxidants boost immunity & resistance</li>
+          <li>✔ Suitable for children, youth, women, and elderly alike</li>
+        </ul>
+        <p className="mb-8">
+          From the lap of the mountains to your home – A holistic Ayurvedic solution for everyday health.
+        </p>
+
+        <hr className="my-8 border-gray-300" />
+        <h2 className="text-3xl font-bold text-green-800 mb-4 font-serif">Benefits for Hair & Skin</h2>
+        <h3 className="text-2xl font-semibold text-green-700 mt-6 mb-3 font-serif">The perfect blend of beauty & health.</h3>
+        <p className="mb-4">
+          Malkagni Oil deeply nourishes hair from the roots, removes dandruff, and restores natural shine. It makes hair <span className="font-bold">thick, strong, and healthy.</span> For skin, it helps reduce blemishes, brings a natural glow, and protects against pollution.
+        </p>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-left">
+          <li>✔ Relief from dandruff & itching</li>
+          <li>✔ Deep nourishment for strong & healthy hair</li>
+          <li>✔ Adds natural shine, softness, and smoothness</li>
+          <li>✔ Increases hair volume & prevents thinning</li>
+          <li>✔ Reduces spots & blemishes, improves complexion</li>
+          <li>✔ Protects skin from pollution & damage</li>
+          <li>✔ Delays premature greying, keeps hair dense</li>
+          <li>✔ Provides relaxation from stress & anxiety</li>
+          <li>✔ Boosts immunity for complete family protection</li>
+        </ul>
+        <p className="mb-8">
+          Because true beauty is not just looking good – it is about being healthy from within.
+        </p>
+
+        <hr className="my-8 border-gray-300" />
+        <h2 className="text-3xl font-bold text-green-800 mb-4 font-serif">Who Can Use It?</h2>
+        <h3 className="text-2xl font-semibold text-green-700 mt-6 mb-3 font-serif">Beneficial for every age and every need.</h3>
+        <ul className="list-disc list-inside space-y-2 mb-4 text-left">
+          <li>✔ Children – Improves memory & concentration</li>
+          <li>✔ Youth – Reduces stress, fatigue & increases efficiency</li>
+          <li>✔ Women – Strengthens hair & skin with natural beauty care</li>
+          <li>✔ Elderly – Provides mental peace & physical balance</li>
+        </ul>
+        <p className="font-bold mb-3 text-left">Effective in:</p>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-left">
+          <li>Joint, knee & muscle pain</li>
+          <li>Arthritis, stiffness, and backache</li>
+          <li>Stress, sleeplessness & mental fatigue</li>
+          <li>Hair fall, dandruff, premature greying</li>
+          <li>Weak immunity and recurring illnesses</li>
+        </ul>
+        <p className="mb-8">
+          One oil – countless benefits for the whole family’s <span className="font-bold">health & happiness.</span>
+        </p>
+
+        <hr className="my-8 border-gray-300" />
+        <h2 className="text-3xl font-bold text-green-800 mb-4 font-serif">Our Promise – Your Health First</h2>
+        <h3 className="text-2xl font-semibold text-green-700 mt-6 mb-3 font-serif">Pure care with complete dedication.</h3>
+        <p className="mb-4">
+          Malkagni Oil is not just a medicine – it is <span className="font-bold">a priceless gift of nature.</span> We deliver it with <span className="font-bold">purity, trust, and care.</span> Suitable for all age groups, it brings <span className="font-bold">balance, peace, and vitality</span> into life.
+        </p>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-left">
+          <li>✔ Deep relief from joint, back, and arthritis pain</li>
+          <li>✔ Guaranteed purity – trust in every drop</li>
+          <li>✔ Naturally sourced – health from the lap of nature</li>
+          <li>✔ Safe, effective, and free from harmful side effects</li>
+          <li>✔ Long-lasting health benefits with regular use</li>
+          <li>✔ Blend of ancient Ayurvedic wisdom & modern research</li>
+          <li>✔ Premium quality at affordable pricing</li>
+        </ul>
+        <p className="mb-8">
+          A true gift of nature that brings <span className="font-bold">health and happiness across generations.</span>
+        </p>
+
+        <hr className="my-8 border-gray-300" />
+        <h2 className="text-3xl font-bold text-green-800 mb-4 font-serif">Usage Guidelines</h2>
+        <h3 className="text-2xl font-semibold text-green-700 mt-6 mb-3 font-serif">Your safety is our responsibility.</h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 text-left">
+          <li>Always follow doctor’s advice before oral intake</li>
+          <li>Avoid overdose (may cause dizziness or restlessness)</li>
+          <li>Warm in nature – avoid spicy food during use</li>
+          <li>Store in a cool, dry, shaded place away from sunlight</li>
+          <li>Keep away from children’s reach</li>
+          <li>Use in proper dosage for best results</li>
+        </ul>
+        <p className="mb-8">
+          <span className="font-bold">Our commitment – Only benefits, no risks.</span>
+        </p>
       </div>
     </div>
   );
