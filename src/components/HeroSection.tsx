@@ -14,11 +14,11 @@ const HeroSection = () => {
     <section className="relative bg-gradient-to-br from-green-50 to-green-100 py-20 overflow-hidden">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 px-4">
         <div className="md:w-1/2 text-center md:text-left z-10">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-green-900 leading-tight mb-6 font-sans">
-            Ayurveda of India: Authentic Wellness for a Balanced Life
+          <h1 className="text-5xl md:text-6xl font-extrabold text-green-900 leading-tight mb-6 font-serif">
+            {malkanganiOil.name} – Fast, focused comfort for joints & muscles
           </h1>
           <p className="text-xl text-gray-700 mb-8 max-w-lg mx-auto md:mx-0">
-            Discover the timeless wisdom of Ayurveda with our natural, high-quality products, crafted for your holistic well-being. Featuring our best-selling {malkanganiOil.name}.
+            An Ayurvedic oil designed to help ease stiffness and support freer movement.
           </p>
           <Link to={`/products/${malkanganiOil.slug}`}>
             <Button className="bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
