@@ -1,5 +1,5 @@
 import React from 'react';
-import { Product } => '@/data/products';
+import { Product } from '@/data/products'; // Corrected from '=>' to 'from'
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
