@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '@/data/products';
 import { Button } from '@/components/ui/button';
-import RevealOnScroll from './RevealOnScroll'; // Import RevealOnScroll
 
 const HeroSection = () => {
   const malkanganiOil = products.find(p => p.isHero);
@@ -15,38 +14,28 @@ const HeroSection = () => {
     <section className="relative bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 py-20 overflow-hidden">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 px-4">
         <div className="md:w-1/2 text-center md:text-left z-10">
-          <RevealOnScroll delay={100} animation="fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-extrabold text-green-900 leading-tight mb-4 font-serif">
-              Mount Abu wala Malkaagni Oil
-            </h1>
-          </RevealOnScroll>
-          <RevealOnScroll delay={300} animation="fade-in-up">
-            <p className="text-base text-gray-700 mb-6 leading-relaxed">
-              <span className="font-bold">100% Ayurvedic | No Adulteration | Clinically Proven</span>
-            </p>
-          </RevealOnScroll>
-          <RevealOnScroll delay={500} animation="fade-in-up">
-            <p className="text-xl text-gray-700 mb-8 max-w-lg mx-auto md:mx-0">
-              An Ayurvedic oil designed to help ease stiffness and support freer movement.
-            </p>
-          </RevealOnScroll>
-          <RevealOnScroll delay={700} animation="pop-in">
-            <Link to={`/products/${malkanganiOil.slug}`}>
-              <Button className="bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
-                View Product
-              </Button>
-            </Link>
-          </RevealOnScroll>
+          <h1 className="text-5xl md:text-6xl font-extrabold text-green-900 leading-tight mb-4 font-serif">
+            Mount Abu wala Malkaagni Oil
+          </h1>
+          <p className="text-base text-gray-700 mb-6 leading-relaxed">
+            <span className="font-bold">100% Ayurvedic | No Adulteration | Clinically Proven</span>
+          </p>
+          <p className="text-xl text-gray-700 mb-8 max-w-lg mx-auto md:mx-0">
+            An Ayurvedic oil designed to help ease stiffness and support freer movement.
+          </p>
+          <Link to={`/products/${malkanganiOil.slug}`}>
+            <Button className="bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+              View Product
+            </Button>
+          </Link>
         </div>
         <div className="md:w-1/2 flex justify-center md:justify-end z-10">
-          <RevealOnScroll delay={900} animation="zoom-in">
-            <img
-              src={malkanganiOil.image}
-              alt={malkanganiOil.name}
-              className="w-full max-w-md h-auto rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"
-              loading="lazy"
-            />
-          </RevealOnScroll>
+          <img
+            src={malkanganiOil.image}
+            alt={malkanganiOil.name}
+            className="w-full max-w-md h-auto rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"
+            loading="lazy"
+          />
         </div>
       </div>
       {/* Subtle background elements */}

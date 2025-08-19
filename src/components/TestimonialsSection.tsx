@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from '@/components/ui/card';
 import type { CarouselApi } from "@/components/ui/carousel"; // Import CarouselApi type
-import RevealOnScroll from './RevealOnScroll'; // Import RevealOnScroll
 
 interface Testimonial {
   quote: string;
@@ -21,19 +20,17 @@ interface Testimonial {
 
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
-    <RevealOnScroll animation="fade-in-up">
-      <Card className="bg-white p-4 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center h-full transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-        <Quote size={32} className="text-green-600 mb-2 opacity-70" />
-        <p className="text-sm text-gray-700 italic mb-3 leading-normal">"{testimonial.quote}"</p>
-        <div className="flex items-center mt-auto">
-          {/* Removed img tag for avatar */}
-          <div>
-            <p className="font-semibold text-green-800 text-sm">{testimonial.author}</p>
-            <p className="text-xs text-gray-500">{testimonial.location}</p>
-          </div>
+    <Card className="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center h-full">
+      <Quote size={40} className="text-green-600 mb-3 opacity-70" />
+      <p className="text-base text-gray-700 italic mb-4 leading-normal">"{testimonial.quote}"</p>
+      <div className="flex items-center mt-auto">
+        {/* Removed img tag for avatar */}
+        <div>
+          <p className="font-semibold text-green-800 text-base">{testimonial.author}</p>
+          <p className="text-xs text-gray-500">{testimonial.location}</p>
         </div>
-      </Card>
-    </RevealOnScroll>
+      </div>
+    </Card>
   );
 };
 

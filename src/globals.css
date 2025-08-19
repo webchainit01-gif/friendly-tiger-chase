@@ -95,10 +95,6 @@
     @apply border-border;
   }
 
-  html {
-    scroll-behavior: smooth; /* Added for smooth scrolling */
-  }
-
   body {
     @apply bg-background text-foreground font-sans; /* Apply font-sans to body */
   }
