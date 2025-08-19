@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SectionTitle from './SectionTitle';
 import { ayurvedicHerbs, AyurvedicHerb } from '@/data/ayurvedicHerbs';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button'; // Import Button component
 
 interface HerbCardProps {
   herb: AyurvedicHerb;
@@ -30,6 +31,11 @@ const HerbCard: React.FC<HerbCardProps> = ({ herb }) => {
 };
 
 const AyurvedicHerbsSection = () => {
+  const [showAllHerbs, setShowAllHerbs] = useState(false);
+  const initialHerbsCount = 4;
+
+  const herbsToDisplay = showAllHerbs ? ayurvedicHerbs : ayurvedicHerbs.slice(0, initialHerbsCount);
+
   return (
     <section className="py-16 bg-gradient-to-br from-green-50 to-white">
       <div className="container mx-auto px-4">
@@ -38,10 +44,21 @@ const AyurvedicHerbsSection = () => {
           subtitle="Discover the power of nature's finest herbs, foundational to Ayurvedic wellness."
         />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-          {ayurvedicHerbs.map((herb) => (
+          {herbsToDisplay.map((herb) => (
             <HerbCard key={herb.id} herb={herb} />
           ))}
         </div>
+        {ayurvedicHerbs.length > initialHerbsCount && (
+          <div className="text-center mt-8">
+            <Button
+              onClick={() => setShowAllHerbs(!showAllHerbs)}
+              variant="outline"
+              className="border-green-600 text-green-600 hover:bg-green-50 hover:text-green-700 rounded-full px-6 py-2"
+            >
+              {showAllHerbs ? 'Show Less' : 'Show More'}
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
