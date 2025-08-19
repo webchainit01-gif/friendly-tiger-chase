@@ -10,8 +10,8 @@ const HeroSection = () => {
         {/* Left Section: Image */}
         <AnimatedDiv delay={0} animationType="fade-in" className="md:w-1/2 flex justify-center items-center h-full">
           <img
-            src="/images/hero-left-image.png"
-            alt="Ayurveda of India Product"
+            src="/images/ayurveda-logo.jpeg"
+            alt="Ayurveda of India Logo"
             className="w-full max-w-xs md:max-w-md lg:max-w-lg h-auto object-contain animate-float"
             loading="eager"
           />
