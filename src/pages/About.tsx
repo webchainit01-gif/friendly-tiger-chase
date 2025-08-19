@@ -6,11 +6,17 @@ const About = () => {
     <div className="container mx-auto py-16 px-4">
       <SectionTitle
         title="Our Story & Philosophy"
-        subtitle="Ayurveda of India, founded by Mr. D.K. Agarwal, is built on a legacy of natural wellness and a commitment to authentic Ayurvedic principles."
+        subtitle="Ayurveda of India, founded by Dr. D.K. Agrawal, is built on a legacy of natural wellness and a commitment to authentic Ayurvedic principles."
       />
       <div className="prose max-w-3xl mx-auto text-gray-700 leading-relaxed">
+        <p className="text-center text-xl font-semibold text-green-700 mb-6">
+          हजारों साल पुरानी आयुर्वेद की परंपरा को आगे ले जाते हुए
+        </p>
         <p>
-          Since its inception in 1995, Ayurveda of India has been a beacon of traditional Ayurvedic wisdom, meticulously crafting products that blend ancient knowledge with modern scientific rigor. Our journey began with the profound vision of Mr. D.K. Agarwal, a dedicated proponent of natural healing, who sought to bring the profound healing power of Ayurveda to every household. His commitment to purity, efficacy, and trust forms the bedrock of our brand.
+          Since its inception in 1948, Dr. D.K. Agrawal Ayurvedic Medicines has been a trusted name in Ayurvedic wellness. Our legacy is built on authenticity, family tradition, and quality. Ayurveda, for us, is not just medicine—it is a way of life that restores balance and strengthens health from the roots. We meticulously craft products that blend ancient knowledge with modern scientific rigor, ensuring purity, efficacy, and trust.
+        </p>
+        <p>
+          Our journey began with the profound vision of Dr. D.K. Agrawal, a dedicated proponent of natural healing, who sought to bring the profound healing power of Ayurveda to every household. His commitment to purity, efficacy, and trust forms the bedrock of our brand.
         </p>
         <p>
           We firmly believe in a holistic approach to health, where the body, mind, and spirit are in harmonious balance. Our formulations are derived from carefully selected, potent herbs, sourced from pristine environments and processed with utmost care to retain their natural potency and therapeutic properties. Every product that bears the Ayurveda of India name is a testament to our unwavering dedication to quality, from the initial sourcing of raw materials to the meticulous final packaging.
@@ -20,11 +26,9 @@ const About = () => {
         </p>
         <h3 className="text-2xl font-semibold text-green-700 mt-8 mb-4 font-serif">Our Core Commitments:</h3>
         <ul className="list-disc list-inside space-y-2">
-          <li>**Authenticity:** We adhere strictly to classical Ayurvedic texts and traditional preparation methods, ensuring the true essence of Ayurveda is preserved in every product.</li>
-          <li>**Purity:** We use only 100% natural, ethically sourced ingredients, meticulously screened to be free from artificial additives, harmful chemicals, and contaminants.</li>
-          <li>**Quality:** We maintain stringent quality control standards at every stage of manufacturing. Our facilities are ISO 9001 and GMP certified, reflecting our dedication to international quality benchmarks.</li>
-          <li>**Innovation:** While rooted in tradition, we continuously research and develop new formulations to address modern health challenges, always staying true to the fundamental principles of Ayurveda.</li>
-          <li>**Transparency:** We believe in complete transparency regarding our ingredients, processes, and certifications, building trust with our valued customers.</li>
+          <li>**Heritage & Trust:** Founded in 1948, serving millions of families with authentic Ayurveda. Every medicine is crafted with love, knowledge, and service, not just commerce. Deep roots in Ayurveda, passed through generations and enhanced with modern quality testing. A family legacy, symbolizing trust, purity, and care.</li>
+          <li>**Quality & Safety:** 100% Ayurvedic formulations with no side effects. Made from carefully selected herbs, harvested at the right season for maximum potency. Modern packaging and clinical testing ensure safety and effectiveness. Certified by GMP / ISO standards. Every product balances tradition with science to ensure dependable results.</li>
+          <li>**Why Choose Us:** Over 75 years of trust and family heritage. Taking forward the thousand-year-old tradition of Ayurveda. Pure herbs, authentic formulations, and modern testing. No harmful chemicals, no adulteration. Safe for all ages, suitable for daily wellness.</li>
         </ul>
         <p>
           Join us on a journey towards holistic well-being, guided by the ancient wisdom of Ayurveda and the unwavering commitment of Ayurveda of India.

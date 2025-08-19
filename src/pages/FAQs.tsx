@@ -34,11 +34,27 @@ const faqs = [
   },
   {
     question: "What makes Ayurveda of India products unique?",
-    answer: "Ayurveda of India stands out due to our unwavering commitment to authenticity, purity, and quality. Founded by Mr. D.K. Agarwal, we combine ancient Ayurvedic formulations with modern scientific validation. We prioritize ethical sourcing, rigorous testing, and manufacturing in certified facilities, ensuring that each product delivers genuine Ayurvedic benefits for holistic well-being.",
+    answer: "Ayurveda of India stands out due to our unwavering commitment to authenticity, purity, and quality. Founded by Dr. D.K. Agrawal, we combine ancient Ayurvedic formulations with modern scientific validation. We prioritize ethical sourcing, rigorous testing, and manufacturing in certified facilities, ensuring that each product delivers genuine Ayurvedic benefits for holistic well-being.",
   },
   {
     question: "Can I use your products alongside other medications?",
     answer: "While our products are natural and generally safe, it is always advisable to consult with your healthcare provider or an Ayurvedic practitioner before combining them with any ongoing medications or other supplements. This ensures there are no potential interactions and that the products are suitable for your specific health condition.",
+  },
+  {
+    question: "Are these products Ayurvedic?",
+    answer: "Yes, all products are made from pure Ayurvedic herbs and follow traditional principles.",
+  },
+  {
+    question: "Are they safe for all ages?",
+    answer: "Yes, products like Liver Guard, Heeng, and Herbal Shampoo are safe for children, adults, and elderly when taken as directed.",
+  },
+  {
+    question: "Do they have side effects?",
+    answer: "No. These are 100% Ayurvedic formulations, clinically tested, and free from harmful chemicals.",
+  },
+  {
+    question: "Can these be used daily?",
+    answer: "Yes, most products are designed for daily use as part of a balanced lifestyle.",
   },
 ];
 
