@@ -25,12 +25,12 @@ const HeroSection = () => {
             </h1>
           </AnimatedDiv>
           <AnimatedDiv delay={400} animationType="fade-in">
-            <h2 className="text-3xl md:text-4xl font-serif text-white mb-2">
+            <h2 className="text-3xl md:text-4xl font-serif text-green-800 mb-2">
               Ayurveda of India
             </h2>
           </AnimatedDiv>
           <AnimatedDiv delay={600} animationType="fade-in">
-            <p className="text-base md:text-lg text-gray-200 mb-8 max-w-2xl mx-auto md:mx-0 font-sans">
+            <p className="text-base md:text-lg text-green-900 mb-8 max-w-2xl mx-auto md:mx-0 font-sans">
               Since 1948, Ayurveda of India has been carrying forward authentic Ayurvedic wellness with a perfect balance of heritage and modern science.
             </p>
           </AnimatedDiv>
