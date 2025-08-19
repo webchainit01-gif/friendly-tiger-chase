@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <p className="text-gray-600 text-sm mb-3 line-clamp-2">{product.description}</p>
           <div className="flex justify-center items-center gap-4 text-gray-700 text-sm mb-4">
             <span>{product.packSize}</span>
-            <span className="font-bold text-green-700">{product.price}</span>
+            {/* Price removed */}
           </div>
         </CardContent>
         <CardFooter className="p-4 pt-0 flex justify-center">

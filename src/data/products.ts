@@ -7,7 +7,7 @@ export interface Product {
   benefits: string[];
   keyHerbs: string[];
   packSize: string;
-  price: string;
+  // price: string; // Price removed
   isHero?: boolean;
 }
 
@@ -25,7 +25,7 @@ export const products: Product[] = [
     ],
     keyHerbs: ["Bala", "Malkangani", "Nirgundi", "Ashwagandha"],
     packSize: "100 ml",
-    price: "₹199",
+    // price: "₹199", // Price removed
     isHero: true,
   },
   {
@@ -43,7 +43,7 @@ export const products: Product[] = [
     ],
     keyHerbs: ["Shilajit", "Ashwagandha", "Gokshura", "Safed Musli", "Kaunch Beej", "Shatavari"],
     packSize: "60 Tablets",
-    price: "₹499",
+    // price: "₹499", // Price removed
   },
   {
     id: "3",
@@ -60,7 +60,7 @@ export const products: Product[] = [
     ],
     keyHerbs: ["Amla", "Giloy", "Tulsi", "Brahmi", "Neem", "Haritaki"],
     packSize: "60 Tablets",
-    price: "₹399",
+    // price: "₹399", // Price removed
   },
   {
     id: "4",
@@ -77,7 +77,7 @@ export const products: Product[] = [
     ],
     keyHerbs: ["Asthi Samharka", "Nirgundi", "Shalaki", "Ashwagandha", "Ginger", "Babool Phali", "Guggul", "Rasna"],
     packSize: "60 Tablets",
-    price: "₹449",
+    // price: "₹449", // Price removed
   },
   {
     id: "5",
@@ -94,13 +94,13 @@ export const products: Product[] = [
     ],
     keyHerbs: ["Mahanarayan Oil", "Gandhapura Oil", "Nilgiri Oil", "Pudina Satva", "Wintergreen Oil", "Clove Oil"],
     packSize: "100 ml",
-    price: "₹179",
+    // price: "₹179", // Price removed
   },
   {
     id: "6",
     name: "Liver Guard",
     slug: "liver-guard",
-    image: "/images/liver-guard-a1-new.jpeg", // Keeping existing image name
+    image: "/images/liver-guard-a1-new.jpeg",
     description: "Liver Guard is a premium Ayurvedic herbal supplement formulated with 16 rare herbs to detoxify and strengthen the liver naturally. It helps repair liver cells, improves digestion, boosts energy, and supports immunity. Safe and effective for all age groups.",
     benefits: [
       "Detoxifies and rejuvenates liver cells",
@@ -113,6 +113,6 @@ export const products: Product[] = [
     ],
     keyHerbs: ["Bhumyamalaki", "Kalmegh", "Kutki", "and other rare Ayurvedic herbs"],
     packSize: "60 Tablets / Syrup Variant",
-    price: "₹449",
+    // price: "₹449", // Price removed
   }
 ];

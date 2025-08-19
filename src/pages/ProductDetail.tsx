@@ -71,7 +71,7 @@ const ProductDetail = () => {
 
           <AnimatedDiv delay={500}>
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mb-8">
-              <span className="text-2xl font-bold text-green-900">{product.price}</span>
+              {/* Price removed */}
               <span className="text-lg text-gray-600">Pack Size: {product.packSize}</span>
             </div>
           </AnimatedDiv>
