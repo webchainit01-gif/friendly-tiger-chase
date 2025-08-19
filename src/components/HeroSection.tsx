@@ -20,7 +20,7 @@ const HeroSection = () => {
         {/* Right Section: Content */}
         <div className="md:w-1/2 text-white text-center md:text-left relative z-10">
           <AnimatedDiv delay={200} animationType="fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-green-300 leading-tight mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-green-300 leading-tight mb-4">
               हजारों साल पुरानी आयुर्वेद की परंपरा को आगे ले जाते हुए
             </h1>
           </AnimatedDiv>
