@@ -5,19 +5,7 @@ import AnimatedDiv from './AnimatedDiv'; // Import AnimatedDiv
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[600px] md:h-[700px] lg:h-[800px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <AnimatedDiv delay={0} animationType="fade-in" className="absolute inset-0 w-full h-full">
-        <img
-          src="/images/accord-grand-building.png"
-          alt="Ayurveda of India Building"
-          className="w-full h-full object-cover object-center"
-          loading="eager" // Load eagerly for hero image
-        />
-        {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-      </AnimatedDiv>
-
+    <section className="relative h-[600px] md:h-[700px] lg:h-[800px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-700 to-green-900">
       {/* Content */}
       <div className="relative z-10 text-white text-center px-4 max-w-4xl mx-auto">
         <AnimatedDiv delay={200} animationType="fade-up">
