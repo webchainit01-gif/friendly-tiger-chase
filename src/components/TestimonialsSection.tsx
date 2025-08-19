@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import SectionTitle from './SectionTitle';
 import { Quote } from 'lucide-react';
 import {
@@ -9,28 +9,25 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from '@/components/ui/card';
+import type { CarouselApi } from "@/components/ui/carousel"; // Import CarouselApi type
 
 interface Testimonial {
   quote: string;
   author: string;
   location: string;
-  avatar: string;
+  avatar: string; // Still in interface, but won't be rendered
 }
 
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
-    <Card className="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center h-full">
-      <Quote size={48} className="text-green-600 mb-4 opacity-70" />
-      <p className="text-lg text-gray-700 italic mb-6 leading-relaxed">"{testimonial.quote}"</p>
+    <Card className="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center h-full">
+      <Quote size={40} className="text-green-600 mb-3 opacity-70" />
+      <p className="text-base text-gray-700 italic mb-4 leading-normal">"{testimonial.quote}"</p>
       <div className="flex items-center mt-auto">
-        <img
-          src={testimonial.avatar}
-          alt={testimonial.author}
-          className="w-12 h-12 rounded-full object-cover mr-4"
-        />
+        {/* Removed img tag for avatar */}
         <div>
-          <p className="font-semibold text-green-800">{testimonial.author}</p>
-          <p className="text-sm text-gray-500">{testimonial.location}</p>
+          <p className="font-semibold text-green-800 text-base">{testimonial.author}</p>
+          <p className="text-xs text-gray-500">{testimonial.location}</p>
         </div>
       </div>
     </Card>
@@ -71,6 +68,27 @@ const TestimonialsSection = () => {
     },
   ];
 
+  const [emblaApi, setEmblaApi] = useState<CarouselApi>();
+
+  const autoplay = useCallback(() => {
+    if (!emblaApi) return;
+    if (emblaApi.canScrollNext()) {
+      emblaApi.scrollNext();
+    } else {
+      emblaApi.scrollTo(0); // Loop back to start
+    }
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const interval = setInterval(autoplay, 3000); // 3 seconds
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [emblaApi, autoplay]);
+
   return (
     <section className="py-16 bg-green-50">
       <div className="container mx-auto px-4">
@@ -84,6 +102,7 @@ const TestimonialsSection = () => {
             loop: true,
           }}
           className="w-full max-w-4xl mx-auto"
+          setApi={setEmblaApi}
         >
           <CarouselContent className="-ml-4">
             {testimonials.map((testimonial, index) => (
