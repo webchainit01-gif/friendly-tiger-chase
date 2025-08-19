@@ -49,7 +49,7 @@ export const products: Product[] = [
     id: "3",
     name: "Maha Vajrasheela (Family)",
     slug: "maha-vajrasheela-family",
-    image: "/images/maha-vajra-shila-family.jpeg",
+    image: "/images/maha-vajra-shila-family-new.jpeg",
     description: "Maha Vajrasheela (Family) offers everyday Ayurvedic wellness for the entire family. These tablets are formulated to promote sustained energy, enhance natural immunity, and build resilience against common ailments, supporting holistic well-being for all ages.",
     benefits: [
       "Supports daily energy and vitality for all family members",
@@ -66,7 +66,7 @@ export const products: Product[] = [
     id: "4",
     name: "Dayana (Joint Support)",
     slug: "dayana-joint-support",
-    image: "/images/dayana-tablets.jpeg",
+    image: "/images/dayana-tablets-new.jpeg",
     description: "Dayana Joint Support tablets are formulated with a powerful blend of Ayurvedic herbs to provide comprehensive support for joint health. They help improve mobility, reduce inflammation, and alleviate discomfort, promoting flexibility and ease of movement.",
     benefits: [
       "Supports healthy joint function and cartilage integrity",
@@ -83,7 +83,7 @@ export const products: Product[] = [
     id: "5",
     name: "Dayana Pain Oil",
     slug: "dayana-pain-oil",
-    image: "/images/dayana-pain-oil.jpeg",
+    image: "/images/dayana-pain-oil-new.jpeg",
     description: "Dayana Pain Oil is a quick-absorbing Ayurvedic oil designed for fast and effective relief from joint and muscular discomfort. Its unique blend of natural ingredients penetrates deep to provide soothing comfort, reduce stiffness, and promote relaxation.",
     benefits: [
       "Provides rapid relief from joint and muscle pain",
@@ -100,7 +100,7 @@ export const products: Product[] = [
     id: "6",
     name: "Liver Guard",
     slug: "liver-guard",
-    image: "/images/liver-guard-a1.jpeg", // Keeping existing image name
+    image: "/images/liver-guard-a1-new.jpeg", // Keeping existing image name
     description: "Liver Guard is a premium Ayurvedic herbal supplement formulated with 16 rare herbs to detoxify and strengthen the liver naturally. It helps repair liver cells, improves digestion, boosts energy, and supports immunity. Safe and effective for all age groups.",
     benefits: [
       "Detoxifies and rejuvenates liver cells",
