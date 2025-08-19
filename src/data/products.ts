@@ -114,41 +114,5 @@ export const products: Product[] = [
     keyHerbs: ["Bhumyamalaki", "Kalmegh", "Kutki", "and other rare Ayurvedic herbs"],
     packSize: "60 Tablets / Syrup Variant",
     price: "₹449",
-  },
-  {
-    id: "7",
-    name: "Heeng (Asafoetida Extract)",
-    slug: "heeng-asafoetida-extract",
-    image: "/images/heeng.jpeg", // Placeholder image
-    description: "Heeng is a traditional Ayurvedic remedy made from pure asafoetida extract and herbs. It supports digestive strength, relieves gas and acidity, and helps ease stomach discomfort. Suitable for children, women, and the elderly.",
-    benefits: [
-      "Improves digestion and reduces indigestion",
-      "Relieves gas, bloating, and acidity",
-      "Provides natural relief from constipation",
-      "Supports women’s and children’s gut health",
-      "Anti-inflammatory and antimicrobial properties",
-      "Safe for daily family use",
-    ],
-    keyHerbs: ["Asafoetida", "and other herbs"],
-    packSize: "50 g",
-    price: "₹99",
-  },
-  {
-    id: "8",
-    name: "Herbal Shampoo",
-    slug: "herbal-shampoo",
-    image: "/images/herbal-shampoo.jpeg", // Placeholder image
-    description: "Herbal Shampoo is enriched with Ayurvedic herbs to deeply nourish hair from the roots. It reduces dandruff, prevents hair fall, strengthens hair, and adds natural shine. Gentle formula suitable for daily use and safe for all ages.",
-    benefits: [
-      "Strengthens roots and nourishes scalp",
-      "Reduces dandruff and itching",
-      "Helps prevent hair fall and breakage",
-      "Makes hair thick, strong, and shiny",
-      "Antioxidant and soothing properties",
-      "Safe, natural formula for all hair types",
-    ],
-    keyHerbs: ["Amla", "Shikakai", "Reetha", "Bhringraj", "Neem"],
-    packSize: "200 ml",
-    price: "₹249",
-  },
+  }
 ];
