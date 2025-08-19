@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import RevealOnScroll from '@/components/RevealOnScroll'; // Import RevealOnScroll
 
 const faqs = [
   {
@@ -65,20 +66,22 @@ const FAQs = () => {
         title="Frequently Asked Questions"
         subtitle="Find comprehensive answers to common questions about Ayurveda of India, our products, and the principles of Ayurveda."
       />
-      <div className="max-w-3xl mx-auto">
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-left text-lg font-semibold text-green-800 hover:no-underline font-serif">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 text-base leading-relaxed">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
+      <RevealOnScroll delay={200} stagger={50}>
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-left text-lg font-semibold text-green-800 hover:no-underline font-serif">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 text-base leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </RevealOnScroll>
     </div>
   );
 };

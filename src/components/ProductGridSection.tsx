@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from './SectionTitle';
 import ProductCard from './ProductCard';
 import { products } from '@/data/products';
+import RevealOnScroll from './RevealOnScroll'; // Import RevealOnScroll
 
 interface ProductGridSectionProps {
   showTitle?: boolean;
