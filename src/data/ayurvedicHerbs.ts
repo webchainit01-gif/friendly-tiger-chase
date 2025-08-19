@@ -11,33 +11,6 @@ export interface AyurvedicHerb {
 
 export const ayurvedicHerbs: AyurvedicHerb[] = [
   {
-    id: 'ashwagandha',
-    name: 'Ashwagandha',
-    tagline: 'Stress Relief & Strength Herb',
-    description: 'A powerful adaptogen known for its stress-reducing and rejuvenating properties. It supports overall vitality and helps balance the body.',
-    benefits: ['Stress Reduction', 'Energy Boost', 'Immune Support', 'Improved Sleep', 'Enhances immunity and brain function', 'Supports hormonal balance and joint strength'],
-    doshas: ['Vata', 'Kapha'],
-    properties: ['Rejuvenating', 'Calming', 'Strengthening'],
-  },
-  {
-    id: 'turmeric',
-    name: 'Turmeric',
-    tagline: 'Anti-Inflammatory & Antioxidant',
-    description: 'A golden spice with potent anti-inflammatory and antioxidant properties. Widely used for its healing benefits and to support digestion.',
-    benefits: ['Anti-inflammatory', 'Antioxidant', 'Digestive Aid', 'Skin Health'],
-    doshas: ['Pitta', 'Kapha'],
-    properties: ['Warming', 'Cleansing', 'Purifying'],
-  },
-  {
-    id: 'triphala',
-    name: 'Triphala',
-    tagline: 'Gentle Cleansing & Detox',
-    description: 'A classic Ayurvedic blend of three fruits, renowned for its gentle cleansing and detoxifying effects. It supports healthy digestion and regularity.',
-    benefits: ['Detoxification', 'Digestive Health', 'Immune Support', 'Antioxidant'],
-    doshas: ['Vata', 'Pitta', 'Kapha'],
-    properties: ['Cleansing', 'Balancing', 'Rejuvenating'],
-  },
-  {
     id: 'brahmi',
     name: 'Brahmi',
     tagline: 'Memory & Cognitive Enhancer',
@@ -63,15 +36,6 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Enhances immunity and protects health', 'Boosts energy and mental freshness', 'Reduces weakness and fatigue in elders', 'Detoxifies and purifies the body'],
     doshas: ['Vata', 'Pitta', 'Kapha'],
     properties: ['Rejuvenating', 'Immune-modulating', 'Bitter'],
-  },
-  {
-    id: 'mahavajrashila-family-tablets',
-    name: 'Mahavajrashila Family Tablets',
-    tagline: 'Overall Well-being Support',
-    description: 'A traditional Ayurvedic formulation known for its various therapeutic benefits, supporting overall well-being.',
-    benefits: ['Reduces Depression', 'Stress Relief', 'Mental Clarity', 'Nervous System Support'],
-    doshas: ['Vata', 'Pitta', 'Kapha'],
-    properties: ['Calming', 'Balancing', 'Rejuvenating'],
   },
   {
     id: 'bhumi-amla',
