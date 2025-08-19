@@ -11,33 +11,6 @@ export interface AyurvedicHerb {
 
 export const ayurvedicHerbs: AyurvedicHerb[] = [
   {
-    id: 'brahmi',
-    name: 'Brahmi',
-    tagline: 'Memory & Cognitive Enhancer',
-    description: 'Known as the "herb of grace," Brahmi is celebrated for its cognitive-enhancing properties, supporting memory, focus, and mental clarity.',
-    benefits: ['Memory Enhancement', 'Cognitive Function', 'Stress Reduction', 'Nervous System Support'],
-    doshas: ['Vata', 'Pitta'],
-    properties: ['Cooling', 'Calming', 'Nourishing'],
-  },
-  {
-    id: 'neem',
-    name: 'Neem',
-    tagline: 'Purifying & Skin Health',
-    description: 'A powerful purifying herb with strong antibacterial and antifungal properties. Often used for skin health and detoxification.',
-    benefits: ['Skin Health', 'Blood Purification', 'Immune Support', 'Antimicrobial'],
-    doshas: ['Pitta', 'Kapha'],
-    properties: ['Cooling', 'Bitter', 'Purifying'],
-  },
-  {
-    id: 'giloy',
-    name: 'Giloy',
-    tagline: 'Immunity Shield',
-    description: 'An immune-boosting herb known for its adaptogenic qualities and ability to support the body\'s natural defense mechanisms.',
-    benefits: ['Enhances immunity and protects health', 'Boosts energy and mental freshness', 'Reduces weakness and fatigue in elders', 'Detoxifies and purifies the body'],
-    doshas: ['Vata', 'Pitta', 'Kapha'],
-    properties: ['Rejuvenating', 'Immune-modulating', 'Bitter'],
-  },
-  {
     id: 'bhumi-amla',
     name: 'Bhumi Amla',
     tagline: 'Liver Cleanser & Immunity Booster',
@@ -209,15 +182,6 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     properties: ['Rejuvenating', 'Immune-boosting', 'Brain tonic'],
   },
   {
-    id: 'shilajit',
-    name: 'Shilajit',
-    tagline: 'The Ultimate Rejuvenator',
-    description: 'A potent mineral pitch found in the Himalayas, revered for its rejuvenating and adaptogenic properties.',
-    benefits: ['Reduces weakness and boosts energy', 'Improves brain power and memory', 'Strengthens heart, muscles, and joints', 'Supports hormonal balance and immunity'],
-    doshas: ['Vata', 'Kapha'],
-    properties: ['Rejuvenating', 'Energizing', 'Adaptogenic'],
-  },
-  {
     id: 'safed-musli',
     name: 'Safed Musli',
     tagline: 'Natural Detox & Energy Herb',
@@ -243,14 +207,5 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Boosts stamina and endurance', 'Relieves chronic weakness and fatigue', 'Strengthens heart and muscles', 'Enhances immunity and reduces stress'],
     doshas: ['Vata', 'Kapha'],
     properties: ['Energizing', 'Immune-boosting', 'Strengthening'],
-  },
-  {
-    id: 'kesar',
-    name: 'Kesar (Saffron)',
-    tagline: 'Memory & Glow Enhancer',
-    description: 'The world\'s most expensive spice, revered in Ayurveda for its mood-enhancing, cognitive, and skin benefits.',
-    benefits: ['Boosts memory, focus, and mental clarity', 'Improves women’s hormonal balance and skin glow', 'Enhances eyesight and vitality in elders', 'Improves mood and relieves stress'],
-    doshas: ['Vata', 'Pitta', 'Kapha'],
-    properties: ['Mood enhancer', 'Cognitive booster', 'Skin enhancer'],
-  },
+  }
 ];
