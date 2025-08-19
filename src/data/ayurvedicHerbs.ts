@@ -7,6 +7,7 @@ export interface AyurvedicHerb {
   doshas: string[];
   properties: string[];
   keyHerbs?: string[];
+  image: string; // Added image property
 }
 
 export const ayurvedicHerbs: AyurvedicHerb[] = [
@@ -18,6 +19,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Improves digestion and strengthens immunity', 'Repairs liver cells, reducing weakness and fatigue', 'Balances hormones and supports women’s health', 'Detoxifies harmful toxins and purifies the liver'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Detoxifying', 'Immune-boosting', 'Hepatoprotective'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'bhringraj',
@@ -27,6 +29,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Boosts stamina, energy, and physical performance', 'Improves digestion and nutrient absorption', 'Promotes healthy skin and hair', 'Detoxifies and supports overall wellness'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Rejuvenating', 'Detoxifying', 'Hair tonic'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'kutki',
@@ -36,6 +39,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Repairs liver and reduces fatigue', 'Improves digestion and supports healthy growth', 'Boosts stamina and mental sharpness', 'Strengthens immunity across all ages'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Detoxifying', 'Energizing', 'Immune-boosting'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'kalmegh',
@@ -45,6 +49,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Eliminates toxins from the body', 'Strengthens immunity in children', 'Improves digestion and energy', 'Repairs liver, reducing weakness and fatigue'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Detoxifying', 'Hepatoprotective', 'Immune-boosting'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'makoy',
@@ -54,6 +59,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Improves digestion and nutrient absorption', 'Strengthens liver and boosts stamina', 'Repairs liver damage in elders', 'Reduces stress and promotes mental calmness'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Calming', 'Liver cleansing', 'Digestive'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'punarnava',
@@ -63,6 +69,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Detoxifies liver and kidneys', 'Reduces inflammation and bloating', 'Boosts energy and relieves fatigue', 'Maintains hormonal balance in women'],
     doshas: ['Kapha', 'Pitta'],
     properties: ['Diuretic', 'Anti-inflammatory', 'Detoxifying'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'arjun',
@@ -72,6 +79,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Strengthens heart health and regulates blood pressure', 'Improves circulation and stamina', 'Reduces weakness and fatigue in elders', 'Supports healthy cardiac muscles'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Cardioprotective', 'Circulatory support', 'Tonic'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'daru-haldi',
@@ -81,6 +89,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Improves heart health and circulation', 'Boosts immunity and strength', 'Reduces swelling and joint pain', 'Enhances skin glow and digestion'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Anti-inflammatory', 'Skin tonic', 'Immune-boosting'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'himsra',
@@ -90,6 +99,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Reduces stress and promotes calmness', 'Boosts immunity and healthy growth', 'Strengthens liver and detoxifies the body', 'Supports hormonal balance in women'],
     doshas: ['Pitta', 'Vata'],
     properties: ['Calming', 'Hepatoprotective', 'Immune-boosting'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'kasani',
@@ -99,6 +109,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Improves digestion and nutrient absorption', 'Strengthens liver and removes toxins', 'Boosts stamina and endurance', 'Reduces swelling and supports immunity'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Digestive', 'Energizing', 'Detoxifying'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'mandur-bhasma',
@@ -108,6 +119,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Corrects iron deficiency and improves blood quality', 'Enhances energy and stamina', 'Reduces weakness and fatigue', 'Improves skin, hair, and overall vitality'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Hematinic', 'Energizing', 'Rejuvenating'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'kakamachi',
@@ -117,6 +129,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Detoxifies liver and purifies blood', 'Boosts stamina and energy', 'Reduces fatigue and weakness in elders', 'Relieves stress and promotes mental peace'],
     doshas: ['Pitta', 'Kapha'],
     properties: ['Detoxifying', 'Calming', 'Energizing'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'kasamarda',
@@ -126,6 +139,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Improves digestion and nutrient absorption', 'Strengthens immunity and energy', 'Reduces joint pain and weakness', 'Cleanses liver naturally'],
     doshas: ['Vata', 'Kapha'],
     properties: ['Digestive', 'Immune-boosting', 'Strengthening'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'biranjasipha',
@@ -135,6 +149,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Improves digestion and nutrient absorption', 'Boosts stamina and physical strength', 'Reduces fatigue and weakness', 'Maintains hormonal balance and detoxifies liver'],
     doshas: ['Vata', 'Pitta', 'Kapha'],
     properties: ['Digestive', 'Detoxifying', 'Hormonal balance'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'jhavu-ka',
@@ -144,6 +159,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Enhances digestion and nutrient absorption', 'Boosts stamina and endurance', 'Reduces weakness and fatigue', 'Detoxifies liver and improves immunity'],
     doshas: ['Kapha', 'Pitta'],
     properties: ['Digestive', 'Energizing', 'Immune-boosting'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'narsingh-churna',
@@ -153,6 +169,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Boosts natural strength and energy', 'Strengthens immunity system', 'Supports stamina and mental alertness', 'Relieves fatigue and weakness in women'],
     doshas: ['Vata', 'Kapha'],
     properties: ['Strengthening', 'Immune-boosting', 'Energizing'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'makardhwaj',
@@ -162,6 +179,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Boosts overall strength and immunity', 'Reduces mental stress and fatigue', 'Strengthens heart and respiratory system', 'Enhances physical balance and skin glow in women'],
     doshas: ['Vata', 'Kapha'],
     properties: ['Rejuvenating', 'Vitality-enhancing', 'Immune-boosting'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'pushpadhanwa-ras',
@@ -171,6 +189,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Reduces weakness, fatigue, and sluggishness', 'Balances heartbeat and mental stress', 'Strengthens muscles and joints', 'Enhances hormonal balance and immunity'],
     doshas: ['Vata', 'Pitta', 'Kapha'],
     properties: ['Energizing', 'Balancing', 'Strengthening'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'swarna-bhasma',
@@ -180,6 +199,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Strengthens immunity and prevents illness', 'Boosts memory and concentration', 'Strengthens heart and reduces stress', 'Improves vitality, longevity, and natural glow'],
     doshas: ['Vata', 'Pitta', 'Kapha'],
     properties: ['Rejuvenating', 'Immune-boosting', 'Brain tonic'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'safed-musli',
@@ -189,6 +209,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Improves digestion and relieves constipation', 'Detoxifies liver and kidneys', 'Supports weight management and blood pressure control', 'Enhances skin glow and immunity'],
     doshas: ['Vata', 'Kapha'],
     properties: ['Rejuvenating', 'Energizing', 'Detoxifying'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'kaunch-beej',
@@ -198,6 +219,7 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Boosts muscle strength and body energy', 'Reduces stress, fatigue, and weakness', 'Improves concentration and memory', 'Strengthens nervous system and immunity'],
     doshas: ['Vata', 'Kapha'],
     properties: ['Neuroprotective', 'Energizing', 'Strengthening'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
     id: 'salam-panja',
@@ -207,5 +229,6 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Boosts stamina and endurance', 'Relieves chronic weakness and fatigue', 'Strengthens heart and muscles', 'Enhances immunity and reduces stress'],
     doshas: ['Vata', 'Kapha'],
     properties: ['Energizing', 'Immune-boosting', 'Strengthening'],
+    image: '/public/images/leaf-pattern.png', // Placeholder image
   }
 ];

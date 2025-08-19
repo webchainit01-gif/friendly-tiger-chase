@@ -15,6 +15,14 @@ const HerbCard: React.FC<HerbCardProps> = ({ herb }) => {
     <Card
       className="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg border border-gray-100 flex flex-col justify-between"
     >
+      <div className="relative h-24 w-full flex items-center justify-center bg-green-50">
+        <img
+          src={herb.image}
+          alt={herb.name}
+          className="h-16 w-16 object-contain"
+          loading="lazy"
+        />
+      </div>
       <CardContent className="p-4 text-center flex-grow">
         <h3 className="text-lg font-semibold text-green-800 mb-1 font-serif">{herb.name}</h3>
         {herb.tagline && <p className="text-green-600 text-xs mb-2 font-medium">{herb.tagline}</p>}
