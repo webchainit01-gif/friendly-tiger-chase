@@ -8,7 +8,7 @@ interface MalkanganiOilDetailContentProps {
   product: Product;
 }
 
-const WHATSAPP_NUMBER = "+919876543210"; // Dummy WhatsApp number
+const WHATSAPP_NUMBER = "+917690090900"; // Updated WhatsApp number
 
 const MalkanganiOilDetailContent: React.FC<MalkanganiOilDetailContentProps> = ({ product }) => {
   return (
@@ -68,7 +68,6 @@ const MalkanganiOilDetailContent: React.FC<MalkanganiOilDetailContentProps> = ({
 
           <AnimatedDiv delay={800}>
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mb-8">
-              {/* Price removed */}
               <span className="text-lg text-gray-600">Pack Size: {product.packSize}</span>
             </div>
           </AnimatedDiv>
