@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductGridSection from '@/components/ProductGridSection';
 import SectionTitle from '@/components/SectionTitle';
+import AnimatedDiv from '@/components/AnimatedDiv'; // Import AnimatedDiv
 
 const Products = () => {
   return (
@@ -10,7 +11,9 @@ const Products = () => {
           title="Our Complete Product Range"
           subtitle="Discover the full spectrum of Ayurvedic wellness solutions from Ayurveda of India."
         />
-        <ProductGridSection showTitle={false} /> {/* showTitle is false because SectionTitle is already above */}
+        <AnimatedDiv delay={200}>
+          <ProductGridSection showTitle={false} /> {/* showTitle is false because SectionTitle is already above */}
+        </AnimatedDiv>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from './SectionTitle';
 import ProductCard from './ProductCard';
 import { products } from '@/data/products';
+import AnimatedDiv from './AnimatedDiv'; // Import AnimatedDiv
 
 interface ProductGridSectionProps {
   showTitle?: boolean;

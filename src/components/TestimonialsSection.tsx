@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from '@/components/ui/card';
 import type { CarouselApi } from "@/components/ui/carousel"; // Import CarouselApi type
+import AnimatedDiv from './AnimatedDiv'; // Import AnimatedDiv
 
 interface Testimonial {
   quote: string;
@@ -20,13 +21,13 @@ interface Testimonial {
 
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
-    <Card className="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center h-full">
-      <Quote size={40} className="text-green-600 mb-3 opacity-70" />
-      <p className="text-base text-gray-700 italic mb-4 leading-normal">"{testimonial.quote}"</p>
+    <Card className="bg-white p-4 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center h-full">
+      <Quote size={32} className="text-green-600 mb-2 opacity-70" />
+      <p className="text-sm text-gray-700 italic mb-3 leading-normal">"{testimonial.quote}"</p>
       <div className="flex items-center mt-auto">
         {/* Removed img tag for avatar */}
         <div>
-          <p className="font-semibold text-green-800 text-base">{testimonial.author}</p>
+          <p className="font-semibold text-green-800 text-sm">{testimonial.author}</p>
           <p className="text-xs text-gray-500">{testimonial.location}</p>
         </div>
       </div>
@@ -96,26 +97,28 @@ const TestimonialsSection = () => {
           title="What Our Customers Say"
           subtitle="Hear from those who have experienced the profound benefits of Ayurveda of India's authentic products."
         />
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-4xl mx-auto"
-          setApi={setEmblaApi}
-        >
-          <CarouselContent className="-ml-4">
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <TestimonialCard testimonial={testimonial} />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <AnimatedDiv delay={200}>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-4xl mx-auto"
+            setApi={setEmblaApi}
+          >
+            <CarouselContent className="-ml-4">
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <TestimonialCard testimonial={testimonial} />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </AnimatedDiv>
       </div>
     </section>
   );

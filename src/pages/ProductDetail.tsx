@@ -4,6 +4,7 @@ import { products } from '@/data/products';
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 import MalkanganiOilDetailContent from '@/components/MalkanganiOilDetailContent';
+import AnimatedDiv from '@/components/AnimatedDiv'; // Import AnimatedDiv
 
 const WHATSAPP_NUMBER = "+919876543210"; // Dummy WhatsApp number
 
@@ -34,46 +35,58 @@ const ProductDetail = () => {
   return (
     <div className="container mx-auto py-16 px-4 bg-white rounded-lg shadow-sm my-8">
       <div className="flex flex-col md:flex-row gap-12 items-center">
-        <div className="md:w-1/2 flex justify-center">
+        <AnimatedDiv delay={0} className="md:w-1/2 flex justify-center">
           <img
             src={product.image}
             alt={product.name}
-            className="w-full max-w-md h-auto rounded-lg shadow-xl border border-gray-100"
+            className="w-full max-w-md h-auto rounded-lg shadow-xl border border-gray-100 transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
             loading="lazy"
           />
-        </div>
+        </AnimatedDiv>
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl font-bold text-green-800 mb-4 font-serif">{product.name}</h1>
-          <p className="text-gray-700 text-lg mb-6 leading-relaxed">{product.description}</p>
+          <AnimatedDiv delay={100}>
+            <h1 className="text-4xl font-bold text-green-800 mb-4 font-serif">{product.name}</h1>
+          </AnimatedDiv>
+          <AnimatedDiv delay={200}>
+            <p className="text-gray-700 text-lg mb-6 leading-relaxed">{product.description}</p>
+          </AnimatedDiv>
 
-          <div className="mb-6">
-            <h2 className="text-2xl font-semibold text-green-700 mb-3 font-serif">Benefits:</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-base text-left">
-              {product.benefits.map((benefit, index) => (
-                <li key={index}>{benefit}</li>
-              ))}
-            </ul>
-          </div>
+          <AnimatedDiv delay={300}>
+            <div className="mb-6">
+              <h2 className="text-2xl font-semibold text-green-700 mb-3 font-serif">Benefits:</h2>
+              <ul className="list-disc list-inside text-gray-700 space-y-2 text-base text-left">
+                {product.benefits.map((benefit, index) => (
+                  <li key={index}>{benefit}</li>
+                ))}
+              </ul>
+            </div>
+          </AnimatedDiv>
 
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-green-700 mb-3 font-serif">Key Herbs Used:</h2>
-            <p className="text-gray-700 text-base text-left">{product.keyHerbs.join(', ')}</p>
-          </div>
+          <AnimatedDiv delay={400}>
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold text-green-700 mb-3 font-serif">Key Herbs Used:</h2>
+              <p className="text-gray-700 text-base text-left">{product.keyHerbs.join(', ')}</p>
+            </div>
+          </AnimatedDiv>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mb-8">
-            <span className="text-2xl font-bold text-green-900">{product.price}</span>
-            <span className="text-lg text-gray-600">Pack Size: {product.packSize}</span>
-          </div>
+          <AnimatedDiv delay={500}>
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mb-8">
+              <span className="text-2xl font-bold text-green-900">{product.price}</span>
+              <span className="text-lg text-gray-600">Pack Size: {product.packSize}</span>
+            </div>
+          </AnimatedDiv>
 
-          <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=I'm interested in your product: ${product.name}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
-              <MessageCircle size={24} /> Chat with Us on WhatsApp
-            </Button>
-          </a>
+          <AnimatedDiv delay={600} animationType="scale-in">
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=I'm interested in your product: ${product.name}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2 hover:shadow-xl">
+                <MessageCircle size={24} /> Chat with Us on WhatsApp
+              </Button>
+            </a>
+          </AnimatedDiv>
         </div>
       </div>
     </div>

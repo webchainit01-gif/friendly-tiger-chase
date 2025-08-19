@@ -3,7 +3,8 @@ import SectionTitle from './SectionTitle';
 import { ayurvedicHerbs, AyurvedicHerb } from '@/data/ayurvedicHerbs';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button'; // Import Button component
+import { Button } from '@/components/ui/button';
+import AnimatedDiv from './AnimatedDiv'; // Import AnimatedDiv
 
 interface HerbCardProps {
   herb: AyurvedicHerb;
@@ -44,20 +45,22 @@ const AyurvedicHerbsSection = () => {
           subtitle="Discover the power of nature's finest herbs, foundational to Ayurvedic wellness."
         />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-          {herbsToDisplay.map((herb) => (
-            <HerbCard key={herb.id} herb={herb} />
+          {herbsToDisplay.map((herb, index) => (
+            <AnimatedDiv key={herb.id} delay={index * 50} animationType="scale-in">
+              <HerbCard herb={herb} />
+            </AnimatedDiv>
           ))}
         </div>
         {ayurvedicHerbs.length > initialHerbsCount && (
-          <div className="text-center mt-8">
+          <AnimatedDiv delay={herbsToDisplay.length * 50} className="text-center mt-8">
             <Button
               onClick={() => setShowAllHerbs(!showAllHerbs)}
               variant="outline"
-              className="border-green-600 text-green-600 hover:bg-green-50 hover:text-green-700 rounded-full px-6 py-2"
+              className="border-green-600 text-green-600 hover:bg-green-50 hover:text-green-700 rounded-full px-6 py-2 transition-all duration-300 hover:scale-[1.01] hover:shadow-md"
             >
               {showAllHerbs ? 'Show Less' : 'Show More'}
             </Button>
-          </div>
+          </AnimatedDiv>
         )}
       </div>
     </section>

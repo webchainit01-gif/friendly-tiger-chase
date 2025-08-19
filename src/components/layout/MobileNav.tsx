@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
@@ -14,6 +14,22 @@ const navLinks = [
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const handleNavLinkClick = (event: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    setIsOpen(false); // Close the sheet on click
+    if (path.startsWith('/#')) {
+      event.preventDefault();
+      const targetId = path.substring(2); // Remove '/#'
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else if (location.pathname === path) {
+      // If already on the same page, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -24,7 +40,7 @@ const MobileNav = () => {
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-[250px] sm:w-[300px] bg-white p-6">
-        <Link to="/" className="flex items-center space-x-2 mb-8" onClick={() => setIsOpen(false)}>
+        <Link to="/" className="flex items-center space-x-2 mb-8" onClick={(e) => handleNavLinkClick(e, '/')}>
           <img src="/images/ayurveda-of-india-logo.jpeg" alt="Ayurveda of India Logo" className="h-10 w-auto" />
         </Link>
         <nav className="flex flex-col space-y-4">
@@ -33,7 +49,7 @@ const MobileNav = () => {
               key={link.name}
               to={link.path}
               className="text-gray-700 hover:text-green-700 font-medium text-lg transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => handleNavLinkClick(e, link.path)}
             >
               {link.name}
             </Link>

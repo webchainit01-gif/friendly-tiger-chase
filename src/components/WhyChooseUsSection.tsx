@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import { Leaf, ShieldCheck, Award, ScrollText } from 'lucide-react';
+import AnimatedDiv from './AnimatedDiv'; // Import AnimatedDiv
 
 interface WhyChooseUsItemProps {
   icon: React.ElementType;
@@ -29,26 +30,34 @@ const WhyChooseUsSection = () => {
           subtitle="Experience the difference of authentic Ayurvedic wisdom combined with modern quality."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <WhyChooseUsItem
-            icon={Leaf}
-            title="Authenticity"
-            description="Rooted in ancient Ayurvedic texts, our formulations are true to tradition."
-          />
-          <WhyChooseUsItem
-            icon={ShieldCheck}
-            title="Purity"
-            description="We use only the finest natural ingredients, free from harmful chemicals."
-          />
-          <WhyChooseUsItem
-            icon={Award}
-            title="Quality"
-            description="Manufactured under strict quality controls, ensuring efficacy and safety."
-          />
-          <WhyChooseUsItem
-            icon={ScrollText}
-            title="Tradition"
-            description="Bringing the timeless wisdom of Ayurveda to modern wellness needs."
-          />
+          <AnimatedDiv delay={0} animationType="fade-up">
+            <WhyChooseUsItem
+              icon={Leaf}
+              title="Authenticity"
+              description="Rooted in ancient Ayurvedic texts, our formulations are true to tradition."
+            />
+          </AnimatedDiv>
+          <AnimatedDiv delay={100} animationType="fade-up">
+            <WhyChooseUsItem
+              icon={ShieldCheck}
+              title="Purity"
+              description="We use only the finest natural ingredients, free from harmful chemicals."
+            />
+          </AnimatedDiv>
+          <AnimatedDiv delay={200} animationType="fade-up">
+            <WhyChooseUsItem
+              icon={Award}
+              title="Quality"
+              description="Manufactured under strict quality controls, ensuring efficacy and safety."
+            />
+          </AnimatedDiv>
+          <AnimatedDiv delay={300} animationType="fade-up">
+            <WhyChooseUsItem
+              icon={ScrollText}
+              title="Tradition"
+              description="Bringing the timeless wisdom of Ayurveda to modern wellness needs."
+            />
+          </AnimatedDiv>
         </div>
       </div>
     </section>
