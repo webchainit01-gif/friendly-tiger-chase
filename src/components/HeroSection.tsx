@@ -5,7 +5,7 @@ import AnimatedDiv from './AnimatedDiv'; // Import AnimatedDiv
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[750px] md:min-h-[700px] lg:min-h-[800px] flex items-center justify-center overflow-hidden bg-#FEDD6C px-4 py-16">
+    <section className="relative min-h-[750px] md:min-h-[700px] lg:min-h-[800px] flex items-center justify-center overflow-hidden bg-color-#FEDD6C px-4 py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 h-full">
         {/* Left Section: Image */}
         <AnimatedDiv delay={0} animationType="fade-in" className="md:w-1/2 flex justify-center items-center h-full">
