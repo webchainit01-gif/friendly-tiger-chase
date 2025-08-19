@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <AnimatedDiv delay={0} animationType="fade-in" className="absolute inset-0 w-full h-full">
         <img
-          src="/images/accord-grand-building.jpeg"
+          src="/images/accord-grand-building.png"
           alt="Ayurveda of India Building"
           className="w-full h-full object-cover object-center"
           loading="eager" // Load eagerly for hero image
