@@ -5,7 +5,7 @@ import AnimatedDiv from './AnimatedDiv'; // Import AnimatedDiv
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[600px] md:h-[700px] lg:h-[800px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-700 to-green-900 px-4">
+    <section className="relative h-[600px] md:h-[700px] lg:h-[800px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-yellow-500 to-yellow-700 px-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 h-full">
         {/* Left Section: Image */}
         <AnimatedDiv delay={0} animationType="fade-in" className="md:w-1/2 flex justify-center items-center h-full">
@@ -20,7 +20,7 @@ const HeroSection = () => {
         {/* Right Section: Content */}
         <div className="md:w-1/2 text-white text-center md:text-left relative z-10">
           <AnimatedDiv delay={200} animationType="fade-up">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-green-300 leading-tight mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-yellow-200 leading-tight mb-4">
               हजारों साल पुरानी आयुर्वेद की परंपरा को आगे ले जाते हुए
             </h1>
           </AnimatedDiv>
