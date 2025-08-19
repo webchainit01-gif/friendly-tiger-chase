@@ -10,11 +10,11 @@ interface WhyChooseUsItemProps {
 
 const WhyChooseUsItem: React.FC<WhyChooseUsItemProps> = ({ icon: Icon, title, description }) => {
   return (
-    <div className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-      <div className="p-4 bg-green-100 rounded-full mb-4">
-        <Icon size={36} className="text-green-700" />
+    <div className="flex flex-col items-center text-center p-4 bg-white rounded-xl shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+      <div className="p-3 bg-green-100 rounded-full mb-3">
+        <Icon size={30} className="text-green-700" />
       </div>
-      <h3 className="text-xl font-semibold text-green-800 mb-2 font-serif">{title}</h3>
+      <h3 className="text-lg font-semibold text-green-800 mb-1 font-serif">{title}</h3>
       <p className="text-gray-600 text-sm">{description}</p>
     </div>
   );
