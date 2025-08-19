@@ -172,26 +172,6 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
-    id: 'pushpadhanwa-ras',
-    name: 'Pushpadhanwa Ras',
-    tagline: 'Energy & Mental Balance Support',
-    description: 'An Ayurvedic formulation that supports energy levels and helps maintain mental balance.',
-    benefits: ['Reduces weakness, fatigue, and sluggishness', 'Balances heartbeat and mental stress', 'Strengthens muscles and joints', 'Enhances hormonal balance and immunity'],
-    doshas: ['Vata', 'Pitta', 'Kapha'],
-    properties: ['Energizing', 'Balancing', 'Strengthening'],
-    image: '/public/images/leaf-pattern.png', // Placeholder image
-  },
-  {
-    id: 'swarna-bhasma',
-    name: 'Swarna Bhasma',
-    tagline: 'Immunity & Brain Booster',
-    description: 'An esteemed Ayurvedic preparation of gold, known for its powerful rejuvenating and immune-boosting effects.',
-    benefits: ['Strengthens immunity and prevents illness', 'Boosts memory and concentration', 'Strengthens heart and reduces stress', 'Improves vitality, longevity, and natural glow'],
-    doshas: ['Vata', 'Pitta', 'Kapha'],
-    properties: ['Rejuvenating', 'Immune-boosting', 'Brain tonic'],
-    image: '/public/images/leaf-pattern.png', // Placeholder image
-  },
-  {
     id: 'safed-musli',
     name: 'Safed Musli',
     tagline: 'Natural Detox & Energy Herb',
