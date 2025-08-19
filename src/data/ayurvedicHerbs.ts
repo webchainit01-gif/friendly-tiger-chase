@@ -172,16 +172,6 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
-    id: 'makardhwaj',
-    name: 'Makardhwaj',
-    tagline: 'Vitality & Longevity Tonic',
-    description: 'A classical Ayurvedic preparation known for its rejuvenating and vitality-enhancing properties.',
-    benefits: ['Boosts overall strength and immunity', 'Reduces mental stress and fatigue', 'Strengthens heart and respiratory system', 'Enhances physical balance and skin glow in women'],
-    doshas: ['Vata', 'Kapha'],
-    properties: ['Rejuvenating', 'Vitality-enhancing', 'Immune-boosting'],
-    image: '/public/images/leaf-pattern.png', // Placeholder image
-  },
-  {
     id: 'pushpadhanwa-ras',
     name: 'Pushpadhanwa Ras',
     tagline: 'Energy & Mental Balance Support',
@@ -209,16 +199,6 @@ export const ayurvedicHerbs: AyurvedicHerb[] = [
     benefits: ['Improves digestion and relieves constipation', 'Detoxifies liver and kidneys', 'Supports weight management and blood pressure control', 'Enhances skin glow and immunity'],
     doshas: ['Vata', 'Kapha'],
     properties: ['Rejuvenating', 'Energizing', 'Detoxifying'],
-    image: '/public/images/leaf-pattern.png', // Placeholder image
-  },
-  {
-    id: 'kaunch-beej',
-    name: 'Kaunch Beej',
-    tagline: 'Energy & Nerve Strength Tonic',
-    description: 'Mucuna Pruriens seeds, known for their neuroprotective and energy-boosting effects.',
-    benefits: ['Boosts muscle strength and body energy', 'Reduces stress, fatigue, and weakness', 'Improves concentration and memory', 'Strengthens nervous system and immunity'],
-    doshas: ['Vata', 'Kapha'],
-    properties: ['Neuroprotective', 'Energizing', 'Strengthening'],
     image: '/public/images/leaf-pattern.png', // Placeholder image
   },
   {
